@@ -1,0 +1,30 @@
+{
+  "name": "zohologin",
+  "version": "1.0.0",
+  "description": "loginto zoho to prevent account from being deleted because of inactivity",
+  "main": "main.js",
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "//": "mocha --recursive ./test/*.test.js",
+    "test": "mocha --recursive",
+    "testc": "nyc --reporter=text mocha --recursive",
+    "m1": "mocha ./test/SQLLiteManager.test.js",
+    "m2": "mocha ./test/ZohoLogin.test.js",
+    "m1c": "nyc --reporter=html --reporter=text mocha ./test/SQLLiteManager.test.js",
+    "m2c": "nyc --reporter=html --reporter=text mocha ./test/ZohoLogin.test.js"
+  },
+  "author": "andreboyce.com",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-arrays": "^2.0.0",
+    "chai-as-promised": "^7.1.1",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2",
+    "nyc": "^15.0.0",
+    "puppeteer": "^2.0.0",
+    "sqlite3": "^4.1.1"
+  }
+}

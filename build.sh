@@ -1,0 +1,1 @@
+zip -r zohologin.zip . -9 -x ".git/*" -x ".vs/*" -x "build.sh" -x "zohologin/.git/*" -x "zohologin/.nyc_output/*" -x "zohologin/bin/*" -x "zohologin/coverage/*" -x "zohologin/data/*" -x "zohologin/node_modules/*" -x "zohologin/obj/*" -x "zohologin/out/*"

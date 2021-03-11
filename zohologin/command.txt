@@ -1,0 +1,37 @@
+##########################################################
+run these commands
+##########################################################
+
+npm install
+
+node main.js
+
+npm run m1c # SQLLiteManager test
+npm run m2c # ZohoLogin test
+npm run testc # should run both m1c and m2c
+
+##########################################################
+
+npm test
+
+jsdoc main.js
+jsdoc SQLLiteManager.js
+jsdoc ZohoLogin.js
+
+npm run testc
+#"testc": "nyc --reporter=text mocha --recursive"
+
+npm run m1
+#"m1": "mocha ./test/SQLLiteManager.test.js"
+
+npm run m2
+#"m2": "mocha ./test/ZohoLogin.test.js"
+
+npm run m1c
+#nyc --reporter=html --reporter=text mocha ./test/SQLLiteManager.test.js
+
+npm run m2c
+#nyc --reporter=html --reporter=text mocha ./test/ZohoLogin.test.js
+
+git commit -a -m "message"
+#adds all tracked files to the staging area and commits them in one step

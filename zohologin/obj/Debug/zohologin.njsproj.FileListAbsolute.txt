@@ -1,0 +1,5 @@
+C:\myfiles\code\node\puppeteer\zohologin\zohologin\obj\Debug\zohologin.njsprojAssemblyReference.cache
+C:\myfiles\code\node\puppeteer\zohologin\zohologin\bin\Microsoft.NodejsTools.WebRole.dll
+C:\myfiles\code\interview\node\zohologin\zohologin\obj\Debug\zohologin.njsprojAssemblyReference.cache
+C:\myfiles\code\interview\node\zohologin\zohologin\obj\Debug\zohologin.njsproj.CoreCompileInputs.cache
+C:\myfiles\code\interview\node\zohologin\zohologin\bin\Microsoft.NodejsTools.WebRole.dll

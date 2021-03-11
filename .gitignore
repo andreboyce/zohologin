@@ -1,0 +1,8 @@
+.vs
+node_modules/
+./zohologin/bin/
+./zohologin/data/
+*coverage/
+./zohologin/.nyc_output/
+./zohologin/out/
+./zohologin/obj/

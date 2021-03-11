@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <html lang="en">
+   <head>
+    <style>
+      .block{ width: 100%; clear: both; }
+    </style>
+   </head>
+   <body>
+
+    <from>
+
+      <script>
+        function checkUsername()
+        {
+           //document.write("checkUsername");
+           //alert( checkUsername );
+           var username = document.getElementById("login_id").value;
+           //document.getElementById("login_id").onclick = checkPassword();
+           if( username == null )
+           {
+             document.write("<div class='fielderror errorlabel'>Username Error</div>");
+             //outerHTML
+           }
+           else
+           {
+             var element = document.getElementById('nextbtn');
+             element.remove();
+
+             var password = document.getElementById('password');
+             //"<button id='nextbtn'><span onclick='javascript:checkPassword();'>Sign in</span></button>"
+             var node = document.createElement( "button" );
+             node.id = "nextbtn";
+             node.innerHTML = "<span>Sign in</span>";
+             node.onclick = "onclick='javascript:checkPassword();'";
+             password.parentNode.insertBefore( node, password.nextSibling );
+           }
+        }
+
+        function checkPassword()
+        {
+           //alert( "checkpassword" );
+           //document.write("checkpassword");
+           var password = document.getElementById("password").value;
+
+           var element =  document.getElementsByClassName("fielderror");
+           element.parentNode.removeChild(element);
+
+           if( password == null )
+           {
+             document.write("<div class='fielderror errorlabel'>Password Error</div>");
+           }
+        }
+     </script>
+
+        <br/>
+
+        <div class='block'>
+          username: <input id='login_id' type='email' /><button id='nextbtn' onclick="javascript:checkUsername();"><span>Next</span></button>
+        </div>
+
+        <br/>
+
+        <br/>
+
+        <div class='block'>
+          password: <input type='password' name='PASSWORD' id='password' />
+        </div>
+
+        <br/>
+
+        <div class='block'>
+          <a id='continueButton'>continueButton</a>
+        </div>
+
+        <br/>
+
+        <div class='block'>
+
+          mobileno: <input id='mobileno' />
+        </div>
+
+        <br/>
+
+        <div class='block'>
+          <a id='updateButton'>updateButton</a>
+        </div>
+
+        <br/>
+
+        <div class='block'>
+          <button id='rmLaterBtn'>rmLaterBtn</button>
+        </div>
+
+        <br/>
+
+        <div class='block'>
+          <!--<a class='zicon-apps-mail'>zicon-apps-mail</a>-->
+          <span class='zicon-apps-mail zicon-apps-96'>zicon-apps-mail</span>
+        </div>
+
+        <br/>
+
+        <div class='block'>
+          <input class='newgraybtn' value='Sign Out' onclick="javascript:location.replace('/cpanel/logout');" />
+        </div>
+
+        <br/>
+
+        <div class='block'>
+          <span class="zmAppName">Mail</span>
+        </div>
+
+        <br/>
+
+    </from>
+
+   </body>
+</html>
